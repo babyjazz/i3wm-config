@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 i3lock-fancy
 ============
 
@@ -67,3 +68,7 @@ branch uses a grey icon and text with outlines to make it visible on light and
 dark backgrounds (though it looks better on dark backgrounds). I am still
 working to get it looking just right right. The script is usable now, but it's
 under developement and things may change.
+=======
+# i3wm-config
+# input file config into folder ~/.i3
+>>>>>>> 345cc9bd996e571edd8d26e84393e01ff5ea0ecb
