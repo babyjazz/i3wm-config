@@ -1,0 +1,104 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# background
+# border
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+#
+# Search more info from i3block-contrube in same git developer and search more in google "i3block script"
+#
+command=~/.config/i3/script/$BLOCK_NAME
+separator_block_width=15
+markup=none
+full_text=<
+color=#48626A
+separator=false
+
+[keyindicator]
+command=~/.config/i3/script/keyindicator
+instance=NUM
+interval=1
+
+[separator]
+
+[keyindicator]
+command=~/.config/i3/script/keyindicator
+instance=CAPS
+interval=1
+
+[separator]
+
+[language]
+command=~/.config/i3/script/key_layout.sh
+interval=1
+color=#ECF000
+
+[separator]
+
+[volume]
+#label=VOL
+label=♪
+interval=once
+color=#F000E1
+
+[separator]
+
+[cpu]
+label=CPU
+interval=5
+
+[separator]
+
+[batterybar]
+command=~/.config/i3/script/batterybar #run batterybar -h for options
+label=Battery:
+#label=⚡
+interval=30
+markup=pango
+min_width=bat: ■■■■■
+color=#F0C400
+
+[separator]
+
+[iface]
+label=IP:
+color=#FF4A23
+interval=5
+
+[separator]
+
+[datetime]
+label= 
+command=date '+%d/%m/%Y'
+interval=86400
+color=#00B118
+
+[separator]
+
+[datetime]
+label= 
+command=date '+%H:%M:%S'
+interval=1
+color=#38FF38
